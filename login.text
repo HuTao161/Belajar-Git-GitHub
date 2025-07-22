@@ -1,0 +1,14 @@
+Login Authentication Logic:
+
+1. Ambil data input dari form: email, password.
+2. Validasi input:
+   - Pastikan email valid (regex) dan password lebih dari 6 karakter.
+3. Cek kecocokan email dan password di database:
+   - Query ke database untuk mencocokkan email.
+   - Jika email tidak ditemukan, tampilkan error "Email tidak terdaftar".
+   - Jika email ditemukan, bandingkan password yang dimasukkan dengan password yang ter-enkripsi di database.
+4. Jika password cocok:
+   - Buat session untuk pengguna.
+   - Redirect ke halaman dashboard.
+5. Jika password tidak cocok:
+   - Tampilkan error "Password salah".
