@@ -1,0 +1,9 @@
+Logout Authentication Logic:
+
+Pengguna menekan tombol logout di aplikasi.
+Sistem mendeteksi dan memproses logout.
+Data session login dihapus (misalnya $_SESSION['user_id']).
+(Opsional) Gunakan session_destroy() untuk hapus semua session.
+Pengguna diarahkan ke halaman login atau beranda.
+(Opsional) Tampilkan pesan "Berhasil logout".
+
